@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  nav span{
+    color: green;
+    font-style: italic;
+    margin-right: 8px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    
+
+    
+  }
+  
+  .line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .burger {
+      display: flex;
+      background-color: black;
+    }
+  }
+  /* ------------------------- section 1 ------------- */
+  header{
+    background-image:linear-gradient(rgba(0,0,0,0.5) 0% 100%) , url(../pic/hero-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header .cover h1 , p{
+    color: white;
+}
+header .button{
+    margin-top: 10px;
+}
+.btn-1 {
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+.btn-2 {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-1:hover {
+    background-color: gray;
+    color: black;
+  }
+  .btn-2:hover {
+    background-color: gray;
+    color: black;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .btn {
+      padding: 8px 16px;
+    }
+  }
+  
+
+/*-------------------------- section 2 ---------------- */
+.services{
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+.services p::after{
+    content: "";
+    height: 6px;
+    width: 4%;
+    background-color:black ;
+    position: absolute;
+    top: 100%;
+    left: 48%;
+} 
+.card{
+    display: flex;
+    justify-content: space-around;
+}
+.card-1{
+    width: 30%;
+    background-color: black;
+    color: white;
+}
+.card-1 img{
+    width: 100%;
+}
+  /*-------------------------------- section-3--------------------------------- */
+  .section-3{
+    background-color: lightgray;
+    margin-top: 20px;
+  }
+  .personal{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+  .personal .icon-card{
+    width: 18%;
+    text-align: center;
+    border: solid 5px ;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+  }
+  .personal .chosse .icon i{
+    font-size: 50px;
+    padding: 30px;
+  }
+  @media screen and (max-width: 730px) {
+    .personal .chosse .text h1 {
+      font-size: 15px;
+    }
+    .personal .chosse .icon i {
+      font-size: 30px;
+    }
+  }
+
+  /*----------------------------- section-4----------------------- */
+  .section-4{
+    background-color: black;
+  }
+  .container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .container .title-1 {
+    width: 30%;
+  }
+  .container .title-1 .prag-1{
+    color: white;
+    position: relative;
+    margin-top: 50px;
+  }
+  .container .title-1 .prag-1 p::after{
+    content: "";
+    height: 4px;
+    width: 20%;
+    background-color:white ;
+    position: absolute;
+    top: 120%;
+    left: 0%;
+} 
+.container .title-2{
+    margin-top: 50px;
+    width: 30%;
+}
+.input-1 {
+    width: 200px;
+    height: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+    margin-bottom: 10px;
+  }
+.input {
+    width: 200px;
+    height: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    display: block;
+  }
+  .container .title-3{
+    margin-top: 50px;
+    width: 30%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .input {
+      width: 100%;
+    }
+    .title-1 , .title-2{
+        width: 100%;
+        display: block;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .title-2 .input-1{
+        width: 150px;
+    }
+    .title-2 .input{
+        width: 150px;
+    }
+    .title-3 .input-1{
+        width: 150px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .title-2 .input-1{
+        width: 100px;
+    }
+    .title-2 .input{
+        width: 100px;
+    }
+    .title-3 .input-1{
+        width: 100px;
+    }
+  }
+  /*------------------------------- last-section---------------- */
+  
